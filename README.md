@@ -20,34 +20,6 @@ Ceylone Serenity is a mini web development project that showcases a fictional tr
 
 This was developed as a coursework/miniproject to gain hands‑on experience building a realistic website using core web technologies.
 
-## 📁 Updating the repository
-
-To push these files (or any changes) to your GitHub repository at `https://github.com/ayasviniK/Ceylone_Serenity.git`, follow these steps in a shell from the project root:
-
-```bash
-# make sure you’re on the correct branch, e.g. main or master
-git checkout main
-
-# copy or move your local folder contents into the repo working tree
-# (if the workspace is already the repo, skip this step)
-
-# stage everything
-git add .
-
-# commit with a descriptive message
-git commit -m "Update website files and README"
-
-# push to the remote
-git push origin main
-```
-
-If the remote already contains files and you have local changes, you may first pull:
-
-```bash
-git pull --rebase origin main
-```
-
-and then repeat the `add`/`commit`/`push` cycle.
 
 ## 📌 Notes
 
