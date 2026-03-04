@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book your dream package with Ceylon Serenity today.">
+    <title>Ceylon Serenity - Book Now</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+
+<body>
+
+    <!-- HEADER / NAVBAR -->
+    <header id="header">
+        <nav class="navbar" style="background: rgba(43, 58, 65, 0.95); padding: 0.5rem 5%;">
+            <a href="home.html" class="logo-link">
+                <img src="images/logoTP1.png" alt="Ceylon Serenity Logo" class="logo">
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="destination.html">Destinations</a></li>
+                <li><a href="package.html">Packages</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact.html" style="color: var(--primary-color);">Book Now</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+
+    <!-- PAGE HEADER -->
+    <div class="page-header"
+        style="background-image: linear-gradient(rgba(43, 58, 65, 0.7), rgba(43, 58, 65, 0.85)), url('images/sl.jpg'); margin-top: 70px;">
+        <div class="container">
+            <h1>Book Your Package</h1>
+            <p>Fill out the form below and our team will get back to you within 24 hours.</p>
+        </div>
+    </div>
+
+    <!-- CONTACT / BOOK NOW SECTION -->
+    <section id="enquire" class="enquire section-padding">
+        <div class="container form-container">
+            <h2 class="section-title text-center text-white" style="margin-top: 3rem;">Book Your Package Now</h2>
+            <form action="form.php" method="post" class="booking-form">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="john@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="+94 77 123 4567">
+                </div>
+                <div class="form-group">
+                    <label for="package">Preferred Package:</label>
+                    <select id="package" name="package" required>
+                        <option value="" disabled selected>Select a package</option>
+                        <option value="adventure-tour-6">Adventure Tour - 6 days</option>
+                        <option value="adventure-tour-10">Adventure Tour - 10 days</option>
+                        <option value="cultural-tour-5">Cultural Tour - 5 days</option>
+                        <option value="cultural-tour-7">Extended Cultural Tour - 7 days</option>
+                        <option value="beach-getaway-4">Beach Getaway - 4 days</option>
+                        <option value="beach-getaway-7">Premium Beach Getaway - 7 days</option>
+                        <option value="wildlife-safari-5">Wildlife Safari - 5 days</option>
+                        <option value="wildlife-safari-7">Premium Wildlife Safari - 7 days</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message or Special Requests:</label>
+                    <textarea id="message" name="message" rows="5"
+                        placeholder="Any dietary requirements, extra beds needed, etc."></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-submit">Submit Booking</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>About</h3>
+                <p>Ceylon Serenity is committed to delivering exceptional experiences while supporting sustainable
+                    tourism in beautiful Sri Lanka.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:info@ceylonserenity.com" class="footer-link">info@ceylonserenity.com</a></p>
+                <p>Phone: +94 123 456 789</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="package.html">Packages</a></li>
+                    <li><a href="destination.html">Destinations</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 Ceylon Serenity. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
